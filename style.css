@@ -9,6 +9,16 @@ body {
   font-family: "Montserrat", sans-serif;
   min-height: 100vh;
 }
+.wrapper {
+  border: 1px solid black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  height: 80%;
+  transform: translate(-50%, -50%);
+  border-radius: 2px;
+}
 header {
   font-size: 2rem;
 }
@@ -19,22 +29,26 @@ form {
   justify-content: center;
   align-items: center;
 }
-form input,
-form button {
-  padding: 0.5rem;
-  font-size: 2rem;
+form input {
+  /* padding: 0.5rem; */
+  font-size: 1.8rem;
   border: none;
+  border-radius: 25px;
   background: white;
+  outline: none;
 }
 form button {
+  font-size: 1.8rem;
   color: red;
-  background: white;
+  background: transparent;
+  border: none;
+  padding: 0.3rem;
   cursor: pointer;
   transition: all 0.3s ease;
+  outline: none;
 }
 form button:hover {
-  background: white;
-  color: red;
+  color: green;
 }
 
 .todo-container {
@@ -93,7 +107,7 @@ form button:hover {
   overflow: hidden;
 }
 select {
-  color: red;
+  color: black;
   cursor: pointer;
   width: 10rem;
   margin-left: 3rem;

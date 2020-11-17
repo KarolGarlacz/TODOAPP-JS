@@ -24,7 +24,7 @@ filterOption.addEventListener("click", filterTodo);
 
 function addTodo(event) {
   if (todoInput.value === "") {
-    alert("Puste");
+    alert("Empty");
   } else {
     event.preventDefault();
     const todoDiv = document.createElement("div");
